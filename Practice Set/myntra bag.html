@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myntra Bag</title>
+  <link rel="stylesheet" href="css/myntra bag.css">
+</head>
+<body>
+  
+  <button class="btn1" onclick="cartQuantity = cartQuantity + 1;
+    document.querySelector('#cart-increment').
+        innerHTML = `your bag has ${cartQuantity} items`;
+    ">Add to bag
+  </button>
+  <button class="btn2" onclick="alert('btn2')">Move to Wishlist</button>
+  <button class="btn1">Add 1+1 Sale item</button>
+
+  <h1 id="cart-increment">Your bag has 0 items</h1>
+
+
+
+
+
+
+
+
+
+
+<script>
+   let cartQuantity = 0;
+   document.querySelector('#cart-increment').
+        innerHTML = `your bag has ${cartQuantity} items`;
+</script>
+
+
+</body>
+</html>
